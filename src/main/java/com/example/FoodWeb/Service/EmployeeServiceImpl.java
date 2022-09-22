@@ -20,14 +20,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public String insertStudent(Employee emp) {
 		// TODO Auto-generated method stub
-		try {
-			Employee value=dao.save(emp);
-			/* System.out.println(value); */
-		}catch(Exception ex) {
-			
-		}
-		
-		
+		Employee value=dao.save(emp);
+		System.out.println(value);
 		return "Employee Registered Sucessfully";
 	}
 	
